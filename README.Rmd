@@ -1,0 +1,30 @@
+---
+title: "README"
+output: md_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+This repository contains a small OMOP CDM in a duckdb database. duckdb is a file based database similar to SQLite but with the benefit of a date type and a OLAP optimized design both of which are important for OMOP CDM data.
+
+How to use this resource:
+
+1. Download the file `synpuf1k.duckdb`
+2. Connect to and query the CDM in R  
+
+```{r}
+library(DBI)
+
+con <- dbConnect(duckdb::duckdb(), "synpuf1k.duckdb")
+
+dbListTables(con)
+
+dbGetQuery(con, "select * from condition_occurrence limit 10")
+
+dbDisconnect(con, shutdown = TRUE)
+```
+
+duckdb can be used in python, Java, C++, or from the command line. Check out the documentation at https://duckdb.org/docs/api/overview
+
