@@ -1,0 +1,26 @@
+{
+    "id": "DEBA725D",
+    "path": "~/projects/create_test_synpuf_cdm_531/ddl/OMOPCDM_postgresql_5.3_ddl.sql",
+    "project_path": "ddl/OMOPCDM_postgresql_5.3_ddl.sql",
+    "type": "sql",
+    "hash": "2382214524",
+    "contents": "",
+    "dirty": false,
+    "created": 1648241373540.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "470,31",
+        "scrollLine": "447"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1648243598,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1648243598956,
+    "read_only": false,
+    "read_only_alternatives": []
+}
